@@ -1,0 +1,341 @@
+body{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(5, 5, 19);
+    /* background-image: url(" https://img.freepik.com/premium-photo/abstract-star-dust-particle-background_110488-460.jpg ");
+     background-size: 80%;  */
+    /* background-position: center; */
+    color:rgb(119, 230, 230,0.8);
+    /* https://c4.wallpaperflare.com/wallpaper/816/251/630/space-universe-planets-dark-background-stars-uncountable-abstract-wallpaper-preview.jpg */
+    /*  https://img.freepik.com/premium-photo/abstract-star-dust-particle-background_110488-460.jpg  main */
+}
+/* --------------Preloader----------- */ 
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background:  rgb(110, 121, 156) url(https://miro.medium.com/v2/resize:fit:978/0*D1icAJvr19HzVBd6.gif) no-repeat center center;
+    background-size: 100%;
+    position: fixed;
+    z-index: 100; 
+    top: 0%;
+}
+
+
+/* --------------Navbar-------------- */
+.bi-globe-asia-australia{
+    color:rgb(119, 230, 230) !important;
+    font-size: 4vw;
+}
+.navbar{
+    background-color: rgb(139, 155, 206) !important;
+    font-size: 2vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    font-weight: 550;
+    height: 13vh;
+}
+/* --------------Header-------------- */ 
+.title{
+    position: absolute;
+    top: 49%;
+    background-color: rgba(154, 163, 190, 0.5);
+    height: 15vh;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color:rgb(119, 230, 230,0.8);
+    margin-top: 2%;
+    font-weight: 550;
+}
+img{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 12vh;
+}
+/* --------------Introduction-------------- */
+.introduction{
+ display: block;
+ margin: auto;
+ margin-top: 10%;
+ width: 80%;
+ height: 100vh;
+ text-align: center;
+
+}
+.greeting{
+    font-size: 3vw;
+}
+input{
+    background-color: rgb(139, 155, 206,0.5);
+    color: rgb(214, 67, 92);
+    font-size: 3vw;
+    width: 30%;
+    border-radius: 0.25rem;
+}
+/*-------------- Profile --------------*/
+.profile-photos-set{
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    height: 350px;
+}
+.characters{
+    border-radius: 50%;
+    border: 5px solid ;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgb(119, 230, 230,0.8), 0 6px 20px 0 rgb(119, 230, 230,0.8);
+}
+.characters:hover{
+    box-shadow: none;
+}
+.btn{
+    background-color: rgb(214, 67, 92);
+    height: 10vh;
+    color: rgba(0,0,0,.55);
+    font-weight: bold;
+    border: 4px solid rgba(72, 80, 105, 0.5);
+    box-shadow:0 0 8px 0.25rem rgb(119, 230, 230,0.8) !important;
+}
+.btn:focus{
+    box-shadow:0 0 8px 0.25rem rgba(230, 158, 170, 0.8) !important;
+}
+.offcanvas{
+    background-image: linear-gradient(to bottom right, rgb(139, 155, 206), rgb(184, 194, 228));
+    /* background-color:rgb(139, 155, 206) ; */
+}
+.profile-bg{
+    background-color: rgba(122, 136, 180, 0.5);
+    height: 30vh;
+}
+#profile-img{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#profile-img:hover{
+    box-shadow: 0 4px 8px 0 rgb(119, 230, 230,0.8), 0 6px 20px 0 rgb(119, 230, 230,0.8);
+}
+#profile-name{
+    position: absolute;
+    top: 55%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.text-reset{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modal-content{
+    background-color: rgb(93, 104, 139)!important;
+}
+textarea{
+    background-color: rgb(93, 104, 139) ;
+    border: none;
+    color:rgb(119, 230, 230);
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 15vh;
+    text-align: center;
+}
+
+/*-------------- Quote --------------*/
+.quote-card{
+    background-color: rgb(93, 104, 139) ;
+    font-size: 2vw !important;
+    height: 23vh!important;
+    box-shadow: 0 4px 8px 0 rgb(119, 230, 230,0.8), 0 6px 20px 0 rgba(230, 158, 170, 0.8);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.quote footer{
+    color: rgba(0,0,0,.55)!important;
+    
+}
+/*-------------- Next page --------------*/
+.next-p{
+    position: absolute;
+    margin: auto;
+    width: 20%;
+    left: 0;
+    right: 0;
+}
+.next-p:hover{
+    animation: shaking 1s linear;
+}
+@keyframes shaking{
+    0%{transform: rotate(0deg); width: 20%; height: 10vh; font-size: 1vw;}
+    33%{transform: rotate(20deg);width: 22%; height: 12vh; font-size: 2vw;}
+    66%{transform: rotate(-20deg); width: 22%; height: 12vh; font-size: 2vw;}
+    100%{transform: rotate(0deg);width: 20%; height: 10vh; font-size: 1vw;}
+}
+
+/*-------------- Footer --------------*/
+.copyright{
+    padding-right: 50px;
+    padding-top: 50px;
+    text-align: right;
+}
+
+/*------------------------------------ Journey Page ------------------------------------*/
+.part{
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 10%;
+}
+.important{
+    color:rgb(214, 67, 92);
+    font-weight: bold;
+}
+.question-box{
+    width: 80%;
+    height: 60vh;
+    background-image: linear-gradient(to bottom right, rgb(139, 155, 206), rgb(184, 194, 228));
+    border-radius: 0.25rem;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(119, 230, 230,0.8), 0 6px 20px 0 rgb(119, 230, 230,0.8);
+}
+.question{
+    border-radius: 0.25rem;
+    background-color: rgb(93, 104, 139) ;
+    width: 100%;
+    height: 40%;
+    padding: 2%;
+}
+.qst{
+    color: rgb(247, 114, 136);
+}
+.answers{
+    margin-top: 2%;
+    text-align: left;
+    width: 100%;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgba(0,0,0,.55);
+}
+.label{
+    margin-left: -14%; 
+}
+.right-false{
+    display: inline;
+}
+.submit-btn{
+    margin-left: 18%;
+    margin-top: 2%;
+    background-color: rgb(214, 67, 92) ;
+    color: rgba(0,0,0,.55);
+    font-weight: bold;
+    border: 4px solid rgba(72, 80, 105, 0.5);
+    border-radius: 15px;
+    font-size: 1.5vw;
+    padding: 0.5%;
+    box-shadow:0 0 8px 0.25rem rgb(119, 230, 230,0.8) !important;
+}
+.submit-btn:focus{
+    box-shadow:0 0 8px 0.25rem rgba(230, 158, 170, 0.8) !important;
+}
+.true-false{
+    color: rgb(218, 94, 115);
+    font-weight: bold;
+}
+.an-btn{
+    text-align: left;   
+}
+
+hr{
+    margin: 10%;
+    height: 2px!important;
+    border-width:0;
+    background-color: rgb(119, 230, 230);
+}
+.big-bang-img{
+    width: 20%;
+    height: 20%;
+
+}
+.big-bang-photos-set{
+    display: grid;
+    grid-template: auto / auto auto auto;
+    height: 350px;
+    align-items: center;
+    justify-items: center;
+    margin-top: -50px;
+    margin-bottom: 15%;
+}
+.popover-header{
+    background-color: rgb(93, 104, 139)!important;
+}
+.popover-body{
+    background-image: linear-gradient(to bottom right, rgb(139, 155, 206), rgb(184, 194, 228))!important;  
+}
+
+.eras-button {
+    width: 35%;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color:rgb(128, 143, 192) ;
+    background-color: rgb(214, 67, 92);
+    border: none;
+    border-radius: 15px;
+    /* box-shadow: 0 9px #999; */
+    font-size: 2.5vw;
+    box-shadow:0 0 8px 0.25rem rgb(119, 230, 230,0.8), 0 9px #7c7c7c !important;
+  }
+  
+.eras-button:focus{
+    box-shadow:0 0 8px 0.25rem rgba(230, 158, 170, 0.8), 0 9px #7c7c7c  !important;  
+}
+.eras-button:hover {background-color: rgb(218, 52, 79);}
+
+.eras-button:active {
+background-color: rgb(218, 52, 79);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+.accordion{
+    display: none; 
+    width: 50%;
+    margin-top: 10%;
+}
+.eras{
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+  }
+  
+.accordion-button {
+    background-color: rgb(139, 155, 206) !important;
+    font-size: 2vw;
+    color:rgb(119, 230, 230,0.8)!important;
+    font-weight: bold;
+    box-shadow:0 0 8px 0.25rem rgb(119, 230, 230,0.8) !important;
+}
+.accordion-button:focus{
+    box-shadow:0 0 8px 0.25rem rgba(230, 158, 170, 0.8) !important; 
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(119, 230, 230,0.8)'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")
+}
+.accordion-body{
+    background-color: rgb(204, 231, 231) !important;
+    color:rgb(140, 152, 192);
+    font-weight: bold;
+    text-align: left;
+}

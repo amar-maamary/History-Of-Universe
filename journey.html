@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>History of Universe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script>
+    $(document).ready(function(){
+      // Enable popovers everywhere
+        $('[data-bs-toggle="popover"]').popover();  
+    });
+    </script>
+</head>
+
+<body>
+    <!-- Downloading the preloader -->
+    <section>
+        <div id="preloader"></div>
+    </section>
+
+    <!-- Custumizing the navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <i class="bi bi-globe-asia-australia navbar-brand"></i>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="journey.html">Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="part">
+      <!-- Introduction paragraph  -->
+      <h3>Billions of years ago there was nothing named Univese.That means there was no plants, no planets even no existence of time and life. <span class="important">So How Did It All Begin?</span></h3>
+      
+      <!-- Question 1  -->
+      <div class="question-box">
+        <div class="question">
+          <h3><strong>Do you know which one is the widely accepted explanation for the Origin Of The Universe?</strong></h3>
+          <h6>You can look down ;) </h6>
+        </div>
+        <div class="answers">
+          <input type="radio" name="origin-of-universe" id="pulsating" value="pulsating">
+          <label id="pulsating-text" for="pulsating" class="label">The Pulsating Theory</label> <p class="right-false"></p><br>
+          <input type="radio" name="origin-of-universe" id="steady-state" value="steady-state">
+          <label id="steady-state-text" for="steady-state" class="label">The Steady State Theory</label><p class="right-false"></p><br>
+          <input type="radio" name="origin-of-universe" id="big-bang" value="big-bang">
+          <label id="big-bang-text" for="big-bang" class="label">The Big Bang Theory</label><p class="right-false"></p><br>
+        </div>
+        <div class="an-btn">
+          <button type="submit" class="submit-btn" onclick="checkAnswer1()" data-bs-toggle="modal" data-bs-target="#staticBackdrop0">Let's see</button>
+        </div>
+      </div>
+      <!-- Added message -->
+      <div class="modal fade" id="staticBackdrop0" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel0" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel0">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p><span id="true-false0" class="true-false"></span> It's the Big Bang Theory. Press 'Close' and Scroll down to explore it :)</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+
+    <!-- Big Bang Theory -->
+    <section class="part">
+      <!-- Title  -->
+      <h1>The Big Bang Theory</h1>
+
+      <!-- Explanation  -->
+      <h3>The big bang theory states that the Universe began as a hot and infinetly dense <b>POINT</b>, with only a few millimeters wide, it was similar to a <b>SUPERCHARGED BLACK HOLE</b>. About 13.7 billion years ago this tiny singularity violently <b>EXPLODED</b>. It's all began With this explosion of this tiny point: <b>Matter, Energy, Time </b>and <b>Space </b>were created.</h3>
+      <!-- Images of the Big Bang -->
+      <picture class="big-bang-photos-set">
+        <img class="characters" type="button" data-bs-toggle="popover" title="Before The Big Bang" data-bs-placement="bottom" data-bs-content=" The Universe was a Hot and infinetly Dense Point." src="https://media.tenor.com/u7qCPTDeYJsAAAAC/hot-and-infinitely-dense-point-national-space-day.gif">
+        <img class="characters" type="button" data-bs-toggle="popover" title="The Big Bang" data-bs-placement="bottom" data-bs-content="The Explosion or Expansion of this Point." src="https://thumbs.gfycat.com/AgitatedIncredibleGander-size_restricted.gif">
+        <img class="characters" type="button" data-bs-toggle="popover" title="After The Big Bang" data-bs-placement="bottom" data-bs-content="The current shape of our Universe which is still Expanding." src="https://scitechdaily.com/images/Vast-Universe-Concept.gif">
+      </picture>
+  
+
+      <!-- Question 2  -->
+      <div class="question-box">
+        <div class="question">
+          <h3><strong>Of course Planets and Earth weren't created right after the Big Bang, so it exists <span class="qst">2 main Stages</span>. Can you tell their names?</strong></h3>
+        </div>
+        <div class="answers">
+          <input type="radio" name="main-stages" id="radiation-matter" value="radiation-matter">
+          <label id="radiation-matter-text" for="radiation-matter" class="label">Radiation Era and Matter Era</label> <p class="right-false"></p><br>
+          <input type="radio" name="main-stages" id="light-atomic" value="light-atomic">
+          <label id="light-atomic-text" for="light-atomic" class="label">Light Era and Atomic Era</label><p class="right-false"></p><br>
+          <input type="radio" name="main-stages" id="light-matter" value="light-matter">
+          <label id="light-matter-text" for="light-matter" class="label">Light Era and Matter Era</label><p class="right-false"></p><br>
+        </div>
+        <div class="an-btn">
+          <button type="submit" class="submit-btn" onclick="checkAnswer2()" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Let's see</button>
+        </div>
+      </div>
+
+      <!-- Added message -->
+      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel1">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p><span id="true-false" class="true-false"></span> It's Radiation and Matter eras. Press 'Close' and Scroll down to explore them :)</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Eras -->
+    <section class="part">
+      <div class="eras"> 
+        <button class="eras-button" onclick="displayRadiationInfo()"> <b>Radiation Era <i class="bi bi-radioactive"></i></b> </button>
+        <button class="eras-button" onclick="displayMatterInfo()"> <b>Matter Era <i class="bi bi-h-circle-fill"></i></b></button>
+      </div>
+      <div class="eras"> 
+        <!-- Radiation Era -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <!-- Introduction -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne1">
+                What is Radiation Era? 
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne1" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne1">
+              <div class="accordion-body">
+                It is the <span class="important">First Era </span>right after the Big Bang. Named for the dominance of <span class="important">ridiation</span>. It's made of small stages called <span class="important">Epochs</span> wich occured within the universe's <span class="important">tens of thousands of years</span>. Here we have a list of them from the earliest to the latest and the effects of each one:
+              </div>
+            </div>
+          </div>
+          <!-- Epochs  -->
+          <!-- Planck Epoch -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo1" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo1">
+                1. Planck Ephoc:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>: 10<sup>-43</sup> seconds</li>
+                  <li><span class="important">Temperature</span>: 10<sup>36</sup> Kelvin</li>
+                  <li><span class="important">No Matter</span> existed only Energie and the ancestor to the Four Forces of nature, <span class="important">The Superforce</span> wich are:
+                    <ol>
+                      <li>Gravity</li>
+                      <li>Strong Nuclear</li>
+                      <li>Weak</li>
+                      <li>Electromagnetic</li>
+                    </ol>
+                  </li>
+                  <li>In the end of this stage a key event occured wich in <span class="important">Gravity</span> splits away from the Superforce</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Grand Unification Epoch -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree1" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree1">
+                2. Grand Unification Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>: 10<sup>-43</sup> seconds</li>
+                  <li><span class="important">Temperature</span>: 10<sup>36</sup> Kelvin</li>
+                  <li><span class="important">Named</span> for the three remaining unified forces of nature: <span class="important">The Grand Unified Theory</span> which are:
+                  <ol>
+                    <li>Strong Nuclear</li>
+                    <li>Weak</li>
+                    <li>Electromagnetic</li>
+                  </ol>
+                 </li>
+                 <li>In the end of this epoch the<span class="important"> Strong Nuclear </span>force splits off.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inflationary Epoch -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour1" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour1">
+                3. Inflationary Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>: 10<sup>-36</sup> seconds</li>
+                  <li><span class="important">Temperature</span>: 10<sup>33</sup> Kelvin</li>
+                  <li>During this epoch the universe rapidly <span class="important">Expanded</span>. Almost instatly it grew from the size of an <span class="important">atom</span> to the size of <span class="important">grapefruit.</span>
+                  <li>The Universe was pipping hot and it was churned with  <span class="important">electrons, quarks and other particles.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ElectroWeak Epoch -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive1" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive1">
+                4. ElectroWeak Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>: 10<sup>-32</sup> seconds</li>
+                  <li><span class="important">Temperature</span>: 10<sup>20</sup> Kelvin</li>
+                  <li>During this epoch the two remainig forces <span class="important">Electromagnetic and Weak</span> split off.
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--  Quarck Epoch  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix1" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix1">
+                5. Quarck Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>: 10<sup>-12</sup> seconds</li>
+                  <li><span class="important">Temperature</span>: 10<sup>16</sup> Kelvin</li>
+                  <li>During this epoch all of the Universe  <span class="important">Ingredients</span> were present.However, the Universe was still too hot and dense for <span class="important">Subatomic particles </span> to form.
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--  Hadron Epoch  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSeven1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven1" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven1">
+                6. Hadron Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSeven1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>: 10<sup>-6</sup> seconds</li>
+                  <li><span class="important">Temperature</span>: 10<sup>10</sup> Kelvin</li>
+                  <li>The Universe  cold down enough for <span class="important">Quarck</span> to form <span class="important">Protons and Neutrons</span>.However, the Universe was still too hot and dense for <span class="important">Subatomic particles </span> to form.
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--  Lepton Epoch  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingEight1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight1" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight1">
+                7. Lepton Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseEight1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>:About 1 second</li>
+                  <li><span class="important">Temperature</span>: 10<sup>12</sup> Kelvin</li>
+                  <li>Protons and Neurons underwent a significant change. They fused and created <span class="important">Nuclei</span> wich created the first Chemical element in the Universe<span class="important"> Helium</span>.
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--  Nuclear Epoch  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingNine1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine1" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine1">
+                8. Nuclear Epoch:
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseNine1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine1">
+              <div class="accordion-body">
+                <ul>
+                  <li><span class="important">Time after Big Bang</span>:About 100 second</li>
+                  <li><span class="important">Temperature</span>: 10<sup>9</sup> Kelvin</li>
+                  <li>It's a continous part of the Lepton Epoch.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Matter Era -->
+        <div class="accordion" id="accordion2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="copyright">Made By Amar Maamary</footer>
+    <script src="script.js"></script>
+  </body>
+
+</html

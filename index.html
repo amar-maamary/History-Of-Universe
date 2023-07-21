@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>History of Universe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Downloading the preloader -->
+    <section>
+        <div id="preloader"></div>
+    </section>
+
+    <!-- Custumizing the navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <i class="bi bi-globe-asia-australia navbar-brand"></i>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="journey.html">Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <header>
+      <img src="https://img.freepik.com/free-photo/glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai_188544-15599.jpg?w=826&t=st=1687381781~exp=1687382381~hmac=b7245e8116021591074c3c137e656e536cc8655413dcc6981c90229f9ba9f82e">
+      <div class="title">
+          <h1> History Of Universe</h1>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="introduction">
+        <label class="greeting">Hello, </label><input id="name" type="text" placeholder="Name">
+        <label class="greeting">.Welcome to our Lab!</label>
+
+        <!-- Choozing your profile -->
+        <h3>Please chooze your favorite Profile Photo.</h3>
+        <picture class="profile-photos-set">
+          <img class="characters" style='border-color:rgb(139, 155, 206,0.5) ;' type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProfile(this)" src="https://media.tenor.com/EbZAp_oLAcYAAAAC/astronaut.gif">
+          <img class="characters" style='border-color:rgb(214, 67, 92,0.5) ;' type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"  onclick="setProfile(this)" src="scientific.gif">
+          <img class="characters" style='border-color:rgb(139, 155, 206,0.5) ;' type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"  onclick="setProfile(this)" src="https://i.pinimg.com/originals/67/b2/a9/67b2a9ba5e85822f237caae92111e938.gif">
+          <img class="characters" style='border-color:rgb(214, 67, 92,0.5) ;' type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"   onclick="setProfile(this)" src="https://media.tenor.com/vyk55SQZsQsAAAAM/landing-rocket-science.gif">
+        </picture>
+
+        <!-- Added message -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>The image has been successfuly added to the profile.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Check my profile</button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header profile-bg">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <img id="profile-img" class="characters" src="#">
+            <h2 id="profile-name"></h2>
+          <!-- User's Special Quote -->
+            <div class="card quote-card" style="margin-top: 60%; height: 28vh!important;">
+              <div class="card-header">
+                My Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <textarea id="user-quote"></textarea>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="quote">
+        <div class="card quote-card">
+          <div class="card-header">
+            Space Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p><b>“Somewhere, something incredible is waiting to be known.”</b></p>
+              <footer class="blockquote-footer">Sharon Begley in <cite title="Source Title">Space</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <br>
+      <!-- Next page -->
+      <br>
+      <br>
+      <section>
+        <a href="journey.html"><button class="btn next-p" type="button">Let's Goo !!</button></a>
+      </section>
+      <br>
+      <br>
+
+      <!-- Footer -->
+      <footer class="copyright">Made By Amar Maamary</footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
